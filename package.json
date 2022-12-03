@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "node ./src/cluster/bootloader.js"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +21,8 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
     "particles.js": "^2.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
