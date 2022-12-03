@@ -1,0 +1,48 @@
+.main-div{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image{
+    /* background-image: url(/assets/portfolio-background.jpg); */
+
+    /* Blur the image */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Position and center the image to scale nicely on all screens */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+.main-card{
+    width: 25%;
+    z-index: 2;
+    text-align: center;
+}
+
+.home-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.home-text{
+    font-size: 20px;
+}

@@ -1,0 +1,19 @@
+.filler {
+    flex: 1 1 auto;
+ }
+
+ .gap {
+    margin-right: 1%;
+ }
+
+ @media screen and (min-width: 480px) {
+    .gap {
+        margin-right: 10px;
+    }
+ }
+
+ .logo {
+    margin: 0 16px;
+    max-height: 100%;
+    max-width: 100%;  
+ }
