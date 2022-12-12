@@ -8,7 +8,7 @@ export const ParticlesConfig = {
         }
       },
       color: {
-        value: 'random'
+        value: '#ff0000'
       },
       shape: {
         type: 'polygon',

@@ -1,19 +1,28 @@
 .filler {
-    flex: 1 1 auto;
- }
+   flex: 1 1 auto;
+}
 
- .gap {
-    margin-right: 1%;
- }
+.gap {
+   margin-right: 1%;
+}
 
- @media screen and (min-width: 480px) {
-    .gap {
-        margin-right: 10px;
-    }
- }
+@media screen and (min-width: 480px) {
+   .gap {
+      margin-right: 10px;
+   }
+}
 
- .logo {
-    margin: 0 16px;
-    max-height: 100%;
-    max-width: 100%;  
- }
+@media screen and (min-width: 320px) {
+   .gap {
+      margin-right: 1vw;
+      font-size: small;
+      width: fit-content;
+      height: fit-content;
+   }
+}
+
+.logo {
+   max-width: 64px;
+   min-width: 32px;
+
+}
