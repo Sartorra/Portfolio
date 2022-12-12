@@ -29,8 +29,9 @@
     text-align: left;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     .content{
-        font-size: 1.2em;
+        text-indent: 3vw;
+        font-size: 3.5vw;
     }
 }
