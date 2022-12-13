@@ -1,33 +1,47 @@
-.filler {
-   flex: 1 1 auto;
+.sidenav-container {
+  height: 100%;
 }
 
-.gap {
-   margin-right: 1%;
+.sidenav {
+  width: 200px;
 }
 
-.logo {
-   max-width: 64px;
-   min-width: 32px;
-   margin: right 0;
+.sidenav .mat-toolbar {
+  background: inherit;
 }
 
-
-@media screen and (max-width: 480px) {
-   .gap {
-      margin-right: 10px;
-   }
-
-   .logo {
-      width: 48px;
-   }
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-@media screen and (max-width: 320px) {
-   .gap {
-      margin-right: 1vw;
-      font-size: small;
-      width: fit-content;
-      height: fit-content;
-   }
+.background {
+  /* Blur the image */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Position the background correctly */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: -1;
+}
+
+.content-container {
+  max-height: fit-content;
+  min-height: calc(100% - 64px);
+  display: flex;
+  position: relative;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
 }

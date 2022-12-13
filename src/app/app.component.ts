@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ParticlesConfig } from './particles-config';
-
-declare let particlesJS: any;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,10 +8,10 @@ export class AppComponent implements OnInit {
   title = 'Portfolio';
 
   public ngOnInit(): void {
-    this.invokeParticles();
+    // this.invokeParticles();
   }
 
-  private invokeParticles(): void {
-    particlesJS('particles-js', ParticlesConfig, ()=>{});
-  }
+  // private invokeParticles(): void {
+  //   particlesJS('particles-js', ParticlesConfig, ()=>{});
+  // }
 }
