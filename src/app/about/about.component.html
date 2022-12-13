@@ -1,53 +1,17 @@
-<!-- About page. -->
-
-<!-- Content -->
-<div class="main-content">
-<div class="background-image" id="about-particles-js"></div>
-<mat-grid-list cols="4" rowHeight="200px" gutterSize="5px">
-    <!-- About me section -->
-    <mat-grid-tile colspan=3 rowspan=1>
-        <mat-card class="content-card">
-            <mat-card-title>About Me</mat-card-title>
-
-            <mat-card-content class="content">
-                Hello I am Braedan, a software engineer from Canada who is passionate about creating software that is functional, beautiful, and easy to use.
-                I have a strong background in game development and robotics. 
-
-                I am always looking for new opportunities to learn and grow as a developer.
-            </mat-card-content>
-        </mat-card>
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
     </mat-grid-tile>
-
-    <mat-grid-tile colspan=1 rowspan=1>
-        <mat-card>
-            <mat-card-content>
-                <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-picture">
-            </mat-card-content>
-        </mat-card>
-    </mat-grid-tile>
-
-    <!-- Skills section -->
-    <mat-grid-tile colspan="1" rowspan="1">
-    </mat-grid-tile>
-    <mat-grid-tile colspan=3 rowspan=1>
-        <mat-card class="content-card">
-            <mat-card-title>My Experience</mat-card-title>
-
-            <mat-card-content class="content">
-
-            </mat-card-content>
-        </mat-card>
-    </mat-grid-tile>
-
-    <!-- Projects section -->
-    <mat-grid-tile colspan=3 rowspan=1>
-        <mat-card class="content-card">
-            <mat-card-title>My Skills</mat-card-title>
-
-            <mat-card-content class="content">
-
-            </mat-card-content>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+  </mat-grid-list>
 </div>

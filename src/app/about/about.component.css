@@ -1,37 +1,21 @@
-.main-content{
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: top;
+.grid-container {
+  margin: 20px;
 }
 
-.mat-grid-list{
-    width: 100%;
-
-    max-height: 100%;
-    min-height: fit-content;
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
 }
 
-.content-card{
-    width: 95%;
-
-    min-height: 95%;
-    max-height: fit-content;
-
-    border-radius: 5px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
-.content{
-    text-indent: 50px;
-    font-size: 2vw;
-    text-align: left;
-}
-
-@media screen and (max-width: 800px) {
-    .content{
-        text-indent: 3vw;
-        font-size: 3.5vw;
-    }
+.dashboard-card-content {
+  text-align: center;
 }
