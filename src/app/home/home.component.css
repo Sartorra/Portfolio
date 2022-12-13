@@ -1,45 +1,11 @@
-.main-div{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+    margin: 20px;
 }
 
-.main-card{
-    max-width: 75%;
-    min-width: 5%;
-
-    max-height: 150%;
-    min-height: fit-content;
-
-    z-index: 2;
-    text-align: center;
-
-    margin-top: auto;
-    margin-bottom: auto;
+.content-card {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
 }
-
-.home-title{
-    font-size: 3em;
-    font-weight: bold;
-}
-
-.home-text{
-    font-size: 1.5em;
-}
-
-
-@media screen and (max-width: 860px) {
-    .main-card {
-        max-width: 50%;
-        min-width: 5%;
-    }
- }
-
- @media screen and (max-width: 480px) {
-    .main-card {
-        max-width: 90%;
-        min-width: 5%;
-    }
- }
