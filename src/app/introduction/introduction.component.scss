@@ -1,0 +1,46 @@
+@import '@angular/material/theming';
+
+@include mat-core();
+
+$background: mat-palette($mat-red);
+
+.mat-app-background {
+    background-color: mat-color($background);
+    min-height: fit-content;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    text-align: center;
+    min-height: fit-content;
+    width: 100%;
+}
+
+.center-content > * {
+    margin: 1em;
+}
+
+h1 {
+    font-size: 5.0vh;
+    color: rgba(0, 0, 0, 1);
+}
+
+h2 {
+    font-size: 3.0vh;
+    color: rgba(0, 0, 0, .75);
+}
+
+h3 {
+    font-size: 2.5vh;
+    color: rgba(0, 0, 0, .6);
+}
+
+h3 a {
+    font-size: 2.5vh;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}

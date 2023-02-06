@@ -1,21 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { ParticlesConfig } from './particles-config';
-
-declare let particlesJS: any;
+import { Component } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+
+  ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'Portfolio';
-
-  public ngOnInit(): void {
-    this.invokeParticles();
-  }
-
-  private invokeParticles(): void {
-    particlesJS('particles-js', ParticlesConfig, ()=>{});
-  }
 }
