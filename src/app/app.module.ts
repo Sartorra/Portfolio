@@ -8,6 +8,9 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,9 @@ import { ProjectsComponent } from './projects/projects.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
