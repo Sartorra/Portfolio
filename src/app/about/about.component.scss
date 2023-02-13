@@ -1,6 +1,13 @@
-.mat-grid-list {
-  height: 500px;
+mat-grid-list {
+  height: 250px;
   width: calc(100% - 16px);
 
   margin: 8px;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+mat-card {
+  min-height: 100%;
+  min-width: 100%;
 }
