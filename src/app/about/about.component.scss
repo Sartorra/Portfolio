@@ -1,5 +1,5 @@
 mat-grid-list {
-  height: 250px;
+  height: 500px;
   width: calc(100% - 16px);
 
   margin: 8px;
@@ -10,4 +10,9 @@ mat-grid-list {
 mat-card {
   min-height: 100%;
   min-width: 100%;
+}
+
+.spacer {
+  margin-bottom: 2vh;
+  height: 2vh;
 }
