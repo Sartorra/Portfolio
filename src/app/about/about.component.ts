@@ -20,17 +20,25 @@ export class AboutComponent {
     map(({ matches }) => {
       let isHandset : boolean = matches;
 
-      if (isHandset) {
-        return [
-          { title: 'Card 1', cols: 4, rows: 1, content: '<b>Card content!</b>' },
-          { title: 'Card 2', cols: 4, rows: 1, content: '<b>Card content!</b>' },
-        ];
-      }
-
-      return [
-        { title: 'Card 1', cols: 3, rows: 1, content: '<b>Card content!</b>' },
-        { title: 'Card 2', cols: 1, rows: 1, content: '<b>Card content!</b>' },
-      ];
+      let cardContent: CardInfo[] = [
+        {
+          title: 'About Me',
+          cols: isHandset ? 4 : 3,
+          rows: 1,
+          content: `<b>Card content!</b>`
+        },
+        {
+          title: 'My Experience',
+          cols: isHandset ? 4 : 1,
+          rows: 1,
+          content: `<ul>
+                      <li>Card Content</li>
+                      <li>Card content!</li>
+                      <li>Card content!</li>
+                    </ul>`
+        }
+      ]
+      return cardContent;
     })
   );
 
